@@ -1,7 +1,8 @@
 # snabbdom-stylematic
 A Stylematic module for Snabbdom.
 
-Stylematic lets you use inline css with all the nesting power of stylesheets, :states, ::pseudo-selectors, @animations, and @media-queries.
+Stylematic lets you use inline css with all the nesting power of stylesheets, :states, ::pseudo-selectors, and @media-queries.
+@keyframes are not supported yet,
 Read more about stylematic [here](https://github.com/rtsao/stylematic)
 
 ## Usage
