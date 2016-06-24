@@ -47,4 +47,4 @@ h('div', {style}, []);
 
 ### Clean up
 
-There is no clean up, styles are appended to a style tag in the <head> section, and this is never cleared.
+There is no clean up, styles are appended to a style tag in the ```<head>``` section, and this is never cleared.
