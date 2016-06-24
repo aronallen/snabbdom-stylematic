@@ -1,11 +1,11 @@
-import stylematic from '../index.js';
 import snabbdom from 'snabbdom';
 import h from 'snabbdom/h';
+import snabbDomstylematic from '../index.js';
 import snabbdomClass from 'snabbdom/modules/class';
 import snabbdomProps from 'snabbdom/modules/props';
 
 const patch = snabbdom.init([
-  stylematic, // Init patch function with choosen modules
+  snabbDomstylematic, // Init patch function with choosen modules
   snabbdomProps, // for setting properties on DOM elements
   snabbdomClass,
 ]);
