@@ -28,7 +28,7 @@ h('div', {style : {border : '1px solid red'}, []});
 ```
 
 If the reference of a new style object is `===` to the previous style object no new class will be made.
-It is recomended to declare your styles in the root scope of your component, and possible variations, to avoid flooding styles.
+It is recomended to declare your styles in the root scope of your component, and possible variations, to avoid flooding the application with duplicate styles.
 
 ```javascript
 const style = {
