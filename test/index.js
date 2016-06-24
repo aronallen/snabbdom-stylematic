@@ -12,28 +12,30 @@ const patch = snabbdom.init([
 
 setTimeout(() => {
   const style = {
-      ''  : {
-        border: '1px solid blue',
-        width: '10px',
-        height: '10px',
-      },
-      ':hover p': {
-        border : '1px solid blue',
-      },
-    };
+    '': {
+      border: '1px solid blue',
+      width: '10px',
+      height: '10px',
+    },
+    ':hover p': {
+      border: '1px solid blue',
+    },
+  };
   const vnode = h('div', {
-    class : {
-      'hello' : true,
+    class: {
+      hello: true,
     },
     style,
-    }, [h('p', {}, "Hello World")] )
-patch(window.app, vnode);
+  }, [h('p', {}, 'Hello World')]);
+  patch(window.app, vnode);
+
   setTimeout(() => {
-  patch(vnode, h('div', {
-    class : {
-      'hello' : true,
+    patch(vnode, h('div', {
+      class: {
+        hello: true,
+      },
+      style,
     },
-    style,
-    }, [h('p', {stylematic : { '' : {'color' : 'blue'}}}, "Hello World")] ));
+    [h('p', { stylematic: { '': { color: 'blue' } } }, 'Hello World')]));
   }, 100);
 });
