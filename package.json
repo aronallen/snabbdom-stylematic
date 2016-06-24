@@ -1,0 +1,10 @@
+{
+  "license" : "MIT",
+  "dependencies": {
+    "stylematic": "^1.2.0"
+  },
+  "devDependencies": {
+    "snabbdom": "^0.5.0"
+  },
+  "repository" : "https://github.com/aronallen/snabbdom-stylematic.git"
+}
