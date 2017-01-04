@@ -13,11 +13,11 @@ This module must be loaded before `snabdom/modules/class` when creating the patc
 
 ```javascript
 import snabbdom from 'snabbdom';
-import snabbDomstylematic from '../index.js';
+import snabbomStylematic from 'snabbdom-stylematic';
 import snabbdomClass from 'snabbdom/modules/class';
 
 const patch = snabbdom.init([
-  stylematic, // must be before class module
+  snabbdomStylematic, // must be before class module
   snabbdomClass,
 ]);
 ```
